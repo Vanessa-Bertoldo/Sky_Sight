@@ -1,0 +1,2 @@
+Criação de um componente:
+ng generte component <name> 
