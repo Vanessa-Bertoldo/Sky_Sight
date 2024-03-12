@@ -1,2 +1,17 @@
 Criação de um componente:
-ng generte component <name> 
+ng generte component <name>
+
+Observable:
+- Funcionalidade do RXJs que é utilizada pelo Angular
+- Com ele podemos lidar com a tranferência síncrona e assíncrona de dados
+- Diferente de uma promise, um Observable pode ser uma fonte de dados contínua, que poderá emitir dados por mais de uma vez em diferetes momentos
+
+
+Arquiteturas Pull e push
+São dois protocolos diferetes que descrevem como um produtor de dados pode se comunicar
+com um consumidor de dados
+Na arquitetura Pull, o consumidor determina quando recebe os dados do produtor de dado. O próprio produtor desconhece quando os dados serão entregues ao consumidor. Cada função do JS é um sistema Pull. A função é produtora de dados, e o código que chama a função a consome "puxando" um único valor de retorno da sua chamada.
+Na arquitetura Push, o produtor determina quando enviar os dados ao consumidor. promise são o tipo mais comum de sistema Push em JS. Uma promise (o produtor) entrega um valor resolvido aos retornos de chamada registrados (os consumidores) mas diferente das funções, é a Promise que se encarrega de determinar com precisão quando esse valor é "empurado" ara os retornos das chamadas.
+
+Gerando um service
+ng generate service
