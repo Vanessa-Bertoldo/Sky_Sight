@@ -1,3 +1,5 @@
+import { SkysightData } from './../../../../models/interfaces/skysight.interface';
+import { SkysightService } from './../../services/skysight.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: []
 })
 export class HomeComponent implements OnInit {
+  Skysight!: SkysightData;
+  constructor(private skyservice : SkysightService) { }
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() { //Aqui inserimos o código que será inicialiado junto ao componente
+    const initialCityName = 'Belo Horizonte'
+    this.getSkySight(initialCityName);
   }
 
+  getSkySight(cityName: string): void{
+    this.skyservice.get(cityName)
+      .subscribe({
+        next: (response) => {
+          response && (this.Skysight = response);
+        },
+        error: (error) => console.log(error)
+      })
+  }
 }
