@@ -1,3 +1,5 @@
-<p>
-  home works!
-</p>
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Buscar localização" name="city" [(ngModel)]="initialCityName"/>
+  </form>
+</div>
