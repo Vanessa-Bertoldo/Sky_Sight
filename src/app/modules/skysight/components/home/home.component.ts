@@ -3,6 +3,7 @@ import { SkysightData } from './../../../../models/interfaces/skysight.interface
 import { SkysightService } from './../../services/skysight.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
