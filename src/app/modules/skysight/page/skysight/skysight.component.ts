@@ -1,4 +1,4 @@
-import { SkysightService } from './../../modules/skysight/services/skysight.service';
+import { SkysightService } from '../../services/skysight.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Subject, takeUntil } from 'rxjs';

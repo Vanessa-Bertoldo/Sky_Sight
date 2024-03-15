@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SkysightComponent } from './page/skysight/skysight.component';
+import { SkysightComponent } from './modules/skysight/page/skysight/skysight.component';
 
 const routes: Routes = [
   {
