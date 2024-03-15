@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './modules/skysight/components/home/home.component';
+import { SkysightComponent } from './page/skysight/skysight.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'skysight',
-    component:HomeComponent
+    component: SkysightComponent
   }
 ];
 
