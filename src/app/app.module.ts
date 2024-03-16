@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { SkysightComponent } from './modules/skysight/page/skysight/skysight.component';
+import { SkysightCardComponent } from './modules/skysight/components/skysight-card/skysight-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkysightComponent
+    SkysightComponent, SkysightCardComponent
   ],
   imports: [
     BrowserModule,

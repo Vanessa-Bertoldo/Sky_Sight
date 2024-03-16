@@ -15,3 +15,8 @@ Na arquitetura Push, o produtor determina quando enviar os dados ao consumidor. 
 
 Gerando um service
 ng generate service
+
+
+Componentes pais
+Um componente é visto como pai quando renderizamos outro componente dentro dele
+A passagem de dados de um component pai para um component filho ocorre por meio do Input
